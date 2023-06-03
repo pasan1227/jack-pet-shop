@@ -1,5 +1,10 @@
+<script setup>
+import Hero from '../components/HeroSection.vue'
+</script>
+
 <template>
   <div>
+    <Hero />
     <div>
       <h1 class="text-5xl text-center mt-10 font-bold">Find your purrfect companion</h1>
     </div>
