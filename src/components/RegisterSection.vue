@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <div class="flex flex-col items-center justify-center px-6 py-36 md:py-8 mx-auto md:h-screen lg:py-0">
       <div class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 border-gray-200">
         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 class="text-xl font-bold md:text-2xl">Create an account</h1>
@@ -22,19 +22,6 @@
                 type="password"
                 name="password"
                 v-model="password"
-                placeholder="••••••••"
-                class="border sm:text-sm rounded-lg block w-full p-2.5 border-gray-200"
-                required="true"
-              />
-            </div>
-            <div>
-              <label for="confirm-password" class="block mb-2 text-md font-medium"
-                >Confirm password</label
-              >
-              <input
-                type="password"
-                name="confirm-password"
-                v-model="confirmpassword"
                 placeholder="••••••••"
                 class="border sm:text-sm rounded-lg block w-full p-2.5 border-gray-200"
                 required="true"

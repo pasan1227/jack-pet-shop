@@ -1,9 +1,9 @@
 <script setup>
 // import Caousel from '../components/CaouselSection.vue'
+import Bottom from '../components/BottomImage.vue'
 import FeatureSection from '../components/FeatureSection.vue'
 import Hero from '../components/HeroSection.vue'
-import Bottom from '../components/BottomImage.vue'
-
+import SubscriptionSection from '../components/SubsciptionSection.vue'
 </script>
 
 <template>
@@ -11,6 +11,7 @@ import Bottom from '../components/BottomImage.vue'
     <Hero />
     <!-- <Caousel /> -->
     <FeatureSection />
+    <SubscriptionSection />
     <Bottom />
   </main>
 </template>

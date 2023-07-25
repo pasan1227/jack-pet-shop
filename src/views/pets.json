@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Luna",
+    "image": "dog1.jpg",
+    "description": "Luna is a spirited and energetic Australian Shepherd. With her striking blue eyes and beautiful black and white coat, she always turns heads wherever she goes. Luna is known for her playful nature and loves chasing after frisbees and tennis balls. She's incredibly intelligent and has a knack for learning new tricks in no time."
+  },
+  {
+    "name": "Oliver",
+    "image": "cat1.jpg",
+    "description": "Oliver is a sleek and elegant black cat withmesmerizing green eyes. He exudes an air of mystery and loves to explore his surroundings, gracefully leaping from one surface to another. Oliver is an independent feline who enjoys basking in the sun and indulging in occasional playful moments with feather toys."
+  },
+  {
+    "name": "Baxter",
+    "image": "dog2.jpg",
+    "description": "Baxter is a lovable and friendly Golden Retriever. With his golden fur and wagging tail, he has a natural charm that instantly puts people at ease. Baxter is a true water enthusiast and adores swimming and splashing around in lakes and rivers. He's a loyal companion who's always up for an adventure and loves nothing more than spending quality time with his family."
+  },
+  {
+    "name": "Milo",
+    "image": "cat2.jpg",
+    "description": "Milo is a charming and mischievous tabby cat with a playful personality. With his soft and striped coat, he has an irresistible charm that draws people in. Milo is known for his endless curiosity and knack for finding hidden nooks and crannies to explore. Heloves engaging in interactive play sessions, chasing after toys, and pouncing onanything that moves. Despite his mischievous nature, Milo also has a sweet andaffectionate side, often curling up in his owner's lap for cuddles and purringcontently."
+  },
+  {
+    "name": "Coco",
+    "image": "dog3.jpg",
+    "description": "Coco is an adorable and mischievous French Bulldog. With her compact build and expressive eyes, she can effortlessly win anyone's heart. Coco has a playful personality and is known for her comical antics that often leave her owners in stitches. She enjoys short walks, snuggling up on the couch, and playing with her favorite squeaky toys."
+  },
+  {
+    "name": "Diesel",
+    "image": "dog4.jpg",
+    "description": "Diesel is a strong and fearless Rottweiler. With his powerful physique and confident demeanor, he commands respect wherever he goes. Diesel is a highly protective and loyal companion, always keeping a watchful eye on his family. Despite his imposing presence, he has a gentle side and loves nothing more than curling up at his owner's feet for a good belly rub."
+  }
+]

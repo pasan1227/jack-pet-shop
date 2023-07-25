@@ -1,15 +1,18 @@
 <template>
-  <div class="bg-white py-24 sm:py-32">
+  <div class="py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Everything you need to know about your pet
-        </p>
-        <p class="mt-6 text-lg leading-8 text-gray-600">
-          Welcome to our Pet Adoption Heroes! Discover inspiring tales of love and rescue as we celebrate the extraordinary individuals who have changed the lives of animals in need. Join us in creating a brighter future for our furry friends. Be a Hero and adopt, volunteer, or support our cause today!
+        <h2 class="text-center font-semibold leading-7 text-teal-600">
+          Jack Pet Supplies - Where Pets Are Our Priority!
+        </h2>
+        <p class="text-center mt-2 text-3xl font-bold sm:text-4xl">Why Choose Jack Pet Supplies?</p>
+        <p class="mt-6 text-lg text-center text-gray-500">
+          At Jack Pet Supplies, we are more than just a pet adoption center. We are a haven for pet
+          lovers and a trusted resource for all your pet's needs. Here's why you should choose Jack
+          Pet Supplies for all your furry friend's requirements:
         </p>
       </div>
+
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
         <dl
           class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
@@ -17,7 +20,7 @@
           <div v-for="feature in features" :key="feature.name" class="relative pl-16">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600"
               >
                 <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
               </div>
@@ -41,27 +44,27 @@ import {
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Extensive Selection',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      "We offer a wide range of products, from high-quality pet food to stylish accessories and everything in between. You'll find everything you need to keep your pet happy, healthy, and well-cared for.",
     icon: CloudArrowUpIcon
   },
   {
-    name: 'SSL certificates',
+    name: 'Exceptional Quality',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'We believe that pets deserve the best, which is why we carefully curate our inventory to ensure top-notch quality and safety for your beloved companions. We only stock products that meet our stringent standards.',
     icon: LockClosedIcon
   },
   {
-    name: 'Simple queues',
+    name: 'Expert Guidance',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'Our knowledgeable staff consists of passionate pet enthusiasts who are always ready to assist you. Whether you have questions about nutrition, training, or general pet care, our experts are here to provide you with the guidance you need.',
     icon: ArrowPathIcon
   },
   {
-    name: 'Advanced security',
+    name: 'Pet Adoption Center',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      "We are proud to host a dedicated pet adoption center within our store. By choosing Jack Pet Supplies, you not only support your own pet's needs but also contribute to the welfare of homeless animals. Find your perfect furry companion and give them a forever home through our adoption program.",
     icon: FingerPrintIcon
   }
 ]

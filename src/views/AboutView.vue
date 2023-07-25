@@ -1,27 +1,42 @@
 <template>
-  <div class="relative isolate overflow-hidden bg-gray-600 py-24 sm:py-32">
+  <SubHero title="About Us" subtitle="Our Story & Our Services" />
+  <div class="py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-          Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-center font-semibold leading-7 text-teal-600">
+          Jack Pet Supplies - Where Pets Are Our Priority!
+        </h2>
+        <p class="text-center mt-2 text-3xl font-bold sm:text-4xl">About Us</p>
+        <p class="mt-6 text-lg text-center text-gray-500">
+          Jack Pet Supplies was born out of a deep love and respect for animals. It all began with a
+          simple idea - to create a pet store that not only offered top-notch products but also
+          fostered a sense of community and compassion. With this vision in mind, we embarked on a
+          journey to provide pet owners with a one-stop destination where they could find everything
+          their beloved companions needed, while also making a positive impact on the lives of
+          animals in need. Over the years, our store has grown, and so has our commitment to
+          excellence. Today, we proudly serve as a trusted partner in pet care, offering a carefully
+          curated selection of high-quality products, expert guidance, and a welcoming environment
+          where pet lovers can come together. At Jack Pet Supplies, we believe that every pet
+          deserves the best, and we are dedicated to helping you create a lifetime of happiness and
+          well-being for your furry friends.
         </p>
       </div>
-      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-        <div
-          class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10"
-        >
-          <a v-for="link in links" :key="link.name" :href="link.href"
-            >{{ link.name }} <span aria-hidden="true">&rarr;</span></a
-          >
-        </div>
-        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-          <div v-for="stat in stats" :key="stat.name" class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">{{ stat.name }}</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">{{ stat.value }}</dd>
-          </div>
-        </dl>
+      <br />
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <p class="text-center mt-2 text-3xl font-bold sm:text-4xl">Our Services</p>
+        <p class="mt-6 text-lg text-center text-gray-500">
+          At Jack Pet Supplies, we are dedicated to providing comprehensive services that cater to
+          the diverse needs of pet owners. From the moment you step into our store, you'll find a
+          range of offerings designed to make your pet care journey easier and more enjoyable. Our
+          knowledgeable staff is available to provide personalized guidance on nutrition, training,
+          and general pet care, ensuring that you have the information you need to make informed
+          decisions. We offer grooming services performed by experienced professionals who
+          prioritize the comfort and well-being of your pets. Additionally, our pet adoption center
+          provides a loving space for homeless animals to find their forever homes, allowing you to
+          embark on a journey of compassion and companionship. At Jack Pet Supplies, we go above and
+          beyond to exceed your expectations and provide the highest level of service for both you
+          and your furry companions.
+        </p>
       </div>
     </div>
   </div>
@@ -30,17 +45,5 @@
 
 <script setup>
 import Bottom from '../components/BottomImage.vue'
-
-const links = [
-  { name: 'Open roles', href: '#' },
-  { name: 'Internship program', href: '#' },
-  { name: 'Our values', href: '#' },
-  { name: 'Meet our leadership', href: '#' }
-]
-const stats = [
-  { name: 'Offices worldwide', value: '12' },
-  { name: 'Full-time colleagues', value: '300+' },
-  { name: 'Hours per week', value: '40' },
-  { name: 'Paid time off', value: 'Unlimited' }
-]
+import SubHero from '../components/SubHeroSection.vue'
 </script>

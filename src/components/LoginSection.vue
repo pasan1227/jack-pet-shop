@@ -1,12 +1,12 @@
 <template>
   <section>
-    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <div class="flex flex-col items-center justify-center px-6 py-36 md:py-8 mx-auto md:h-screen lg:py-0">
       <div class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 border-gray-200">
         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 class="text-xl font-bold md:text-2xl">Sign In to your account</h1>
           <form class="space-y- md:space-y-6">
             <div>
-              <label for="email" class="block mb-2 text-md font-medium">Your email</label>
+              <label for="email" class="block mb-3 text-md font-medium">Your email</label>
               <input
                 type="email"
                 name="email"
@@ -17,13 +17,13 @@
               />
             </div>
             <div>
-              <label for="password" class="block mb-2 text-md font-medium">Password</label>
+              <label for="password" class="block mt-5 mb-3 text-md font-medium">Password</label>
               <input
                 type="password"
                 name="password"
                 v-model="password"
                 placeholder="••••••••"
-                class="border sm:text-sm rounded-lg block w-full p-2.5 border-gray-200 text-white"
+                class="border mb-3 sm:text-sm rounded-lg block w-full p-2.5 border-gray-200"
                 required="true"
               />
             </div>
@@ -47,12 +47,12 @@
             </div>
             <button
               type="submit"
-              class="w-full text-white bg-teal-600 hover:bg-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              class="w-full text-white bg-teal-600 hover:bg-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-5"
               @click="signin"
             >
               Sign in
             </button>
-            <p class="text-sm font-light text-gray-400">
+            <p class="text-sm font-light mt-3 text-gray-400">
               Don’t have an account yet?
               <a href="/register" class="font-medium text-teal-600 hover:underline">Sign up</a>
             </p>
@@ -69,7 +69,7 @@ import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from
 import { useRouter } from 'vue-router'
 
 export default {
-  name: 'LoginBox',
+  name: 'LoginPage',
 
   data() {
     return {
@@ -97,10 +97,11 @@ export default {
     }
   },
   methods: {
-    signin() {
+    login() {
       signInWithEmailAndPassword(this.auth, this.email, this.password)
         .then((data) => {
           console.log('Logged in')
+          this.loggedIn = true
           this.router.push('/')
         })
         .catch((error) => {
